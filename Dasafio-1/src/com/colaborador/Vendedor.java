@@ -8,6 +8,6 @@ public class Vendedor extends Colaborador {
 
     @Override
     double bonificacao() {
-        return (getSalario() + 1000*getGrauInstrucao()*4);
+        return (getSalario() + 300 * getGrauInstrucao() * 4);
     }
 }

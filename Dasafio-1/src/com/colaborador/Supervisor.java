@@ -7,6 +7,6 @@ public class Supervisor extends Colaborador {
 
     @Override
     double bonificacao() {
-        return (getSalario() + 1000*getGrauInstrucao()*3);
+        return (getSalario() + 500 * getGrauInstrucao() * 3);
     }
 }

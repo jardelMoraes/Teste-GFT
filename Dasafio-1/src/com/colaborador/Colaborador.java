@@ -47,7 +47,7 @@ abstract class Colaborador {
 
     @Override
     public String toString() {
-        return "Colaborador{" +
+        return "{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", salario=" + salario +

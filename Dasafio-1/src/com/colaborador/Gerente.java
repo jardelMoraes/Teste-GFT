@@ -7,6 +7,8 @@ public class Gerente extends Colaborador{
 
     @Override
     double bonificacao() {
-        return (getSalario() + 1000*getGrauInstrucao()*2);
+        return (getSalario() + 1000 * getGrauInstrucao() * 2);
     }
+
+
 }
