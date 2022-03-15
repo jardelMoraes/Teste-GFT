@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int numero = 0;
-        int v = numero ;
+        int numero;
+        int contador = 0;
         Scanner scan = new Scanner(System.in);
 
         System.out.println("digite o numero: ");
@@ -20,11 +20,16 @@ public class Main {
         }
 
         if(numero >= 350 && numero <= 8750 ){
-          while (v > 0 ){
-              v = numero/10;
+          while (numero > 0 ){
+              int proximoDigito = numero % 10;
+              numero = numero / 10;
+              if (!(proximoDigito % 2 == 0)) {
+                  contador++;
+              }
           }
-
+            System.out.println(contador);
         }
+
 
     }
 
